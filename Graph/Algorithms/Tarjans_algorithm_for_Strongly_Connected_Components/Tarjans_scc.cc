@@ -1,4 +1,3 @@
-// Online C++ compiler to run C++ program online
 // A C++ program to find strongly connected components in a
 // given directed graph using Tarjan's algorithm (single
 // DFS)
