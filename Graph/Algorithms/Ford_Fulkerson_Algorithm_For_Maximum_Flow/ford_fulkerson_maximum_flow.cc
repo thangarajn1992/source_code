@@ -96,8 +96,32 @@ int main()
 			{ 0, 0, 0, 7, 0, 4 }, { 0, 0, 0, 0, 0, 0 } };
 
 	cout << "The maximum possible flow is "
-		<< fordFulkerson(adj, 0, 5);
+		<< fordFulkerson(adj, 0, 5) << endl;
 
+	vector<vector<int>> adj1 = {
+			{0, 3, 7, 0, 10, 0},
+			{0, 0, 0, 9, 9, 0},
+			{0, 9, 0, 0, 9, 4},
+			{0, 0, 0, 0, 0, 3},
+			{0, 0, 0, 0, 0, 7},
+			{0, 0, 0, 0, 0, 0}
+	};
+	
+	cout << "The maximum possible flow is "
+		<< fordFulkerson(adj1, 0, 5) << endl;
+
+
+	vector<vector<int>> adj2 = {
+			{0, 10, 10, 0, 0, 0},
+			{0, 0, 2, 4, 8, 0},
+			{0, 0, 0, 0, 9, 0},
+			{0, 0, 0, 0, 0, 10},
+			{0, 0, 0, 6, 0, 10},
+			{0, 0, 0, 0, 0, 0}
+	};
+	
+	cout << "The maximum possible flow is "
+		<< fordFulkerson(adj2, 0, 5) << endl;	
 	return 0;
 }
 /*
